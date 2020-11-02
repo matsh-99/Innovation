@@ -1,0 +1,203 @@
+
+
+* {
+text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.bilde1 {
+  width: 100%;
+  height: calc(100vh - 0px);
+  background-image: url('img/Front-img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+.forside-tekst {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  padding-right: 50px;
+  padding-left: 50px;
+  
+}
+.tekst-forside {
+  width: 800px;
+  border: 1px;
+  padding: 50px 350px;
+  margin: 20px;
+
+}
+
+.tittel-novid {
+  padding-top: 30px;
+  font-size: 80px;
+  color: black;
+  font-family: courier, helvetica, arial ;
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 50px;
+
+}
+
+ul {
+  font-size: 20px;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  background: #f3f3f3;
+  float: left;
+  text-decoration-color: lightblue;
+}
+li{
+
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+li:hover {
+  cursor: pointer;
+  background: #2a6592;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+
+}
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  color: #f3f3f3;
+  z-index: 10;
+}
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+#footer-klasse {
+  position: fixed;
+  bottom: 0;
+  height: 2em;
+  background-color: #f3f3f3;
+  align-items: bottom;
+
+}
+#footer-klasse ul li {
+
+  text-align: bottom;
+  color: black;
+  font-size: small;
+
+
+}
+
+/*Styling for covid-19 page*/
+
+.covid-box {
+  position: static;
+  text-align: center;
+  font-size: 23px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+
+
+}
+.tekst-covid {
+border-bottom: 1px dotted lightblue;
+color: black;
+}
+.fact-box ul {
+  display: contents;
+  list-style-type: square;
+  text-align: left;
+  margin-left: 20px;
+  height: 150px;
+  font-size: 30px;
+
+}
+
+.statistikk-img {
+  float: right;
+  margin-right: 40px;
+}
+/*mission page*/
+
+.container-mission {
+position: relative;
+
+}
+.mission-box {
+  position: absolute;
+  top: 10px;
+  width: auto;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 24px;
+
+}
+.pin-box {
+  position: absolute;
+  bottom: 10px;
+  width: auto;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  font-size: 24px;
+}
+  @media only screen and (max-width: 768px) {
+    .mission-box {
+      font-size: 12px;
+
+    }
+.pin-box {
+  font-size: 12px;
+}
+  }
+
+
+/*company page*/
+.img-company {
+  max-height: 100%;
+  max-width: 100%;
+  background-image: url('img/bilde-company.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+background-position: center;
+
+}
+
+.box-company {
+  background-color: #f3f3f3;
+  opacity: 0.6;
+}
+.box-company p {
+  font-size: 30px;
+  font-weight: bold;
+  width: 60%;
+  height: 100%;
+  color: #000000;
+  padding-left: 50px;
+  padding-top: 30px;
+}
